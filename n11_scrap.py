@@ -11,7 +11,7 @@ url = "https://www.n11.com/bilgisayar/dizustu-bilgisayar?q=notebook&m=Dell"
 html = requests.get(url).content
 soup = BeautifulSoup(html, "html.parser")
 
-# scraping the necessary infos
+# scrapping the necessary infos
 
 liste = soup.find("div", {"class":"listView"}).find_all("li", {"class":"column"})
 
